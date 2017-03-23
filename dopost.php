@@ -1,5 +1,6 @@
 <?php
 include('db.php');
+
 	echo "<h3>View posted data:</h3>";
 	echo "<pre>";
 	print_r($_POST);
