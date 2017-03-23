@@ -36,7 +36,13 @@ if (!$result) die($conn->error);
         <td><?php echo $row['name']; ?></td>
         <td><?php echo $row['email']; ?></td>
         <td><?php echo $row['sex']; ?></td>
-        <td><?php echo $row['intr1']; ?><?php if ($row['intr1'] != '') echo "<br>"; ?><?php echo $row['intr2']; 
+        <td><?php echo $row['intr1']; ?>
+        <?php 
+        if ($row['intr1'] != '') 
+            echo "<br>"; 
+        ?>
+        <?php 
+        echo $row['intr2']; 
         ?>
         </td>
         <td>
